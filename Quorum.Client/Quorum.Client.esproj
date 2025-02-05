@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/0.5.127-alpha">
+  <PropertyGroup>
+    <StartupCommand>npm start</StartupCommand>
+    <JavaScriptTestFramework>Jasmine</JavaScriptTestFramework>
+    <ShouldRunBuildScript>false</ShouldRunBuildScript>
+    <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\quorum.client</BuildOutputFolder>
+    <DefaultItemExcludes>$(DefaultItemExcludes);dist\**;node_modules\**</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\environments\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptConfiguration Include="tsconfig.json" />
+    <TypeScriptConfiguration Include="tsconfig.app.json" />
+    <TypeScriptConfiguration Include="tsconfig.spec.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Script Include="package.json" />
+  </ItemGroup>
+</Project>

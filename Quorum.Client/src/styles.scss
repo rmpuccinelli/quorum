@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+/* Table Styles */
+.table-striped {
+  tbody {
+    tr:nth-of-type(even) {
+      background-color: rgba(0, 0, 0, 0.02);
+    }
+
+    tr:nth-of-type(odd) {
+      background-color: #ffffff;
+    }
+
+    tr:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Legislator Voting Analysis</h2>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Supported Bills</th>
+          <th>Opposed Bills</th>
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr *ngFor="let legislator of legislators$ | async">
+          <td>{{ legislator.legislatorId }}</td>
+          <td>{{ legislator.legislatorName }}</td>
+          <td>{{ legislator.supportedBills }}</td>
+          <td>{{ legislator.opposedBills }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
